@@ -57,6 +57,7 @@ background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  /* Chrome 10-2
 background: linear-gradient(to right, #F3F9A7, #CAC531); 
     justify-content: center;
     box-shadow: 0px 0px 2px 2px black;
+   
 }
 
 .hero-image
@@ -67,11 +68,10 @@ background: linear-gradient(to right, #F3F9A7, #CAC531);
 
 }
 
-
 .aboutmecontainer
 {
     width:50%;
-    margin: 20px 0;
+    margin: 30px 0;
     background-color: lightgray;
     display: flex;
     flex-direction: column;
@@ -109,9 +109,9 @@ background: linear-gradient(to right, #F3F9A7, #CAC531);
     padding: 70px;
     width: auto;
     background: #1f4037;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
 
 }
 .mywork
@@ -134,7 +134,12 @@ background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, F
     gap: 15px;
     background-color: lightgray;
     box-shadow: 0px 0px 2px 2px black;
+    transition: transform .2s;
 
+}
+.p1:hover, .p2:hover, .p3:hover, .p4:hover, .p5:hover, .p6:hover
+{
+    transform: scale(1.05);
 }
 .p1img
 {
@@ -215,3 +220,89 @@ background: linear-gradient(to right, #F3F9A7, #CAC531); /* W3C, IE 10+/ Edge, F
     display: flex;
     gap: 20px;
 }
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+
+{
+    .projects
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+
+    .text
+    {
+        padding: 50px;
+        justify-content: center;
+    }
+
+    .hero-image
+    {
+        width: 400px;
+        height: 400px;
+
+    }
+    
+}
+
+@media only screen 
+  and (min-device-width: 430px) 
+  and (max-device-width: 932px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  {
+
+    .projects
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .foot
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .text
+    {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .icons
+    {
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .footimage
+    {
+        width: 100%;
+        
+    }
+    .head
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .hero-image
+    {
+        width: 100%;
+        
+    }
+    .aboutmecontainer
+    {
+        width: 100%;
+    }
+  }
+
+
