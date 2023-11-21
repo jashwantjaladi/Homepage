@@ -1,0 +1,217 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Handlee', cursive;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*write code here*/
+
+.head
+{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 100px;
+    flex: auto;
+    background: #CAC531;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F3F9A7, #CAC531); 
+    justify-content: center;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.hero-image
+{
+    width: 30%;
+    height: auto;
+    box-shadow: 0px 0px 4px 2px black;
+
+}
+
+
+.aboutmecontainer
+{
+    width:50%;
+    margin: 20px 0;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    box-shadow: 0px 0px 3px 2px black;
+}
+
+.github-icon,.linkedin-icon,.twitter-icon
+{
+    width: 4%;
+}
+
+.about-me{
+    width: fit-content;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.para-me
+{
+    width: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+}
+
+.iconcontainer
+{
+    display: flex;
+   justify-content: end;
+    gap: 20px;
+}
+
+.main{
+    padding: 70px;
+    width: auto;
+    background: #1f4037;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.mywork
+{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px white;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6
+{
+    width: 60%;
+    padding: 25px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: lightgray;
+    box-shadow: 0px 0px 2px 2px black;
+
+}
+.p1img
+{
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 2px black;
+}
+.projects
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    row-gap: 50px;
+    padding-top: 50px;
+}   
+
+.projectname
+{
+    font-size: larger;
+    font-weight: bold;
+    margin: auto;
+}
+
+.des
+{
+    font-size: 1rem;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.github-icon1, .divert-logo, .phoneicon, .emailicon
+{
+    width: 8%;
+}
+
+.foot
+{
+    display: flex;
+    padding: 50px;
+    font-size: small;
+    font-weight: bold;
+    justify-content: center;
+    background: #CAC531;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F3F9A7, #CAC531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+
+.footimage
+{
+    width: 40%;
+    border: 6px solid black;
+
+    
+}
+
+.phone, .email
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.icons
+{
+    display: flex;
+    gap: 20px;
+}
